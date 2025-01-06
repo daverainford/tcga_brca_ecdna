@@ -39,7 +39,8 @@ parse_ascat = function(ascat_dir) {
   )
   
   # Rename columns for consistency
-  colnames(ascat_df_clean) = c("chromosome", "start", "end", "total_cn", "minor_cn", "sample")
+  colnames(ascat_df_clean) = c("chromosome", "start", "end", "total_cn", 
+                               "minor_cn", "sample")
   
   # Ensure columns are numeric
   ascat_df_clean$start <- as.numeric(ascat_df_clean$start)
